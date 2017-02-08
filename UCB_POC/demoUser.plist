@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>firstName</key>
+	<string>Test</string>
+	<key>lastName</key>
+	<string>Mail Admin (BRAEXCAP013)</string>
+	<key>corpID</key>
+	<string>G800400</string>
+	<key>location</key>
+	<string>BEL</string>
+	<key>mail</key>
+	<string>TestMailAdmin.braexcap013@ucb.com</string>
+	<key>serialNumber</key>
+	<string>dnpnl4jjg5mf</string>
+	<key>ok2updateURL</key>
+	<string>http://acc.mobility-ws.ucb.com/ok2update/</string>
+	<key>ucbAPIURL</key>
+	<string>https://mdmapidev.ucb.com/</string>
+	<key>appAPIURL</key>
+	<string>http://prithiviraj.vmokshagroup.com:9033/</string>
+	<key>appstoreURL</key>
+	<string>https://mdm2.ucb.com/home.php?udid=182ECC052D72D4594D601930043C386D283E0750</string>
+</dict>
+</plist>

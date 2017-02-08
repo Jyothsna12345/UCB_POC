@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailView">
+            <connections>
+                <outlet property="detailTableview" destination="RMW-hI-39r" id="geD-BY-lPc"/>
+                <outlet property="doneButton" destination="2pm-DT-tt5" id="mPu-AV-1Gy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pm-DT-tt5">
+                    <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                    <color key="backgroundColor" red="0.10980392160000001" green="0.65098039220000004" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="KZw-A4-SCG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtonAction:" destination="-1" eventType="touchUpInside" id="04y-Kx-XCj"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RMW-hI-39r">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="561"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="567" id="Ghy-hx-wNE"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ghy-hx-wNE"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Lae-vL-VPS"/>
+                        <outlet property="delegate" destination="-1" id="zXs-Jf-uXV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RMW-hI-39r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0hI-HK-R5O"/>
+                <constraint firstAttribute="trailing" secondItem="RMW-hI-39r" secondAttribute="trailing" id="3TT-z0-rYm"/>
+                <constraint firstItem="2pm-DT-tt5" firstAttribute="top" secondItem="RMW-hI-39r" secondAttribute="bottom" constant="-1" id="AR2-yZ-Q7b"/>
+                <constraint firstAttribute="bottom" secondItem="2pm-DT-tt5" secondAttribute="bottom" id="OuZ-aL-gfb"/>
+                <constraint firstItem="2pm-DT-tt5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RJy-sx-yYR"/>
+                <constraint firstAttribute="trailing" secondItem="2pm-DT-tt5" secondAttribute="trailing" id="p25-jl-mdG"/>
+                <constraint firstItem="2pm-DT-tt5" firstAttribute="top" secondItem="RMW-hI-39r" secondAttribute="top" constant="567" id="ueh-bX-UYQ"/>
+                <constraint firstItem="RMW-hI-39r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wMM-yN-CdG"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ueh-bX-UYQ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-57" y="441"/>
+        </view>
+    </objects>
+</document>
