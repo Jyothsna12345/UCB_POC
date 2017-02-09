@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden=NO;
-
+    NSLog(@"Added ");
     // Do any additional setup after loading the view.
 }
 
